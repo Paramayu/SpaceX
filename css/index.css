@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: black;
+  padding: 2.1rem;
+  font-family: "kanit", sans-serif;
+  font-weight: 100;
+  letter-spacing: -0.5px;
+  font-stretch: condensed;
+}
+.inner-nav {
+
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin: auto 3rem;
+
+}
+.logo-img {
+  width: 13rem;
+}
+.navbar-ul {
+  margin: auto 0;
+  display: flex;
+  gap: 1.3rem;
+  font-size: 0.9rem;
+}
+.navbar-li a {
+  text-decoration: none;
+  color: white;
+}
