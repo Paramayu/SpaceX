@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 .navbar {
-  background-color: black;
+  position: fixed;
+  transition: opacity 0.3s;
+  background-color: transparent;
   padding: 2.1rem;
   font-family: "kanit", sans-serif;
+  font-size: 0.9rem;
   font-weight: 100;
   letter-spacing: -0.5px;
   font-stretch: condensed;
+  display: flex;
+  align-items: center;
+  gap: 20rem;
 }
 .inner-nav {
 
@@ -27,9 +33,59 @@
   margin: auto 0;
   display: flex;
   gap: 1.3rem;
-  font-size: 0.9rem;
+  list-style: none;
 }
-.navbar-li a {
+
+.navbar-a{
   text-decoration: none;
   color: white;
 }
+.side-nav{
+  display: flex;
+  gap:2rem;
+}
+.three-lines{
+  letter-spacing: -6px;
+}
+.mission{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.transporter-8{
+  background: url('../Assets/Transporter-8-mission.jpg') no-repeat center;
+  background-size: cover;
+}
+.CRS-28{
+  background: url('../Assets/CRS_28_mission.jpg') no-repeat center;
+  background-size: cover;
+}
+.AX-2{
+  background: url('../Assets/Axiom-2_mission.jpg') no-repeat center;
+  background-size: cover;
+}
+.starship-flight{
+  background: url('../Assets/STARSHIP_missionjpg.jpg') no-repeat center;
+  background-size: cover;
+}
+.title{
+  position: relative;
+  font-family: "Roboto Condensed", sans-serif;
+  top: 12rem;
+  left: 8rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+}
+.name-mission{
+  display: inline-block;
+  width: 28rem;
+  position: relative;
+  font-family: "kanit", sans-serif;
+  top: 20rem;
+  left: -1rem;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+}
+
