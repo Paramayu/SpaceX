@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,body{
+  overflow-x: hidden;
+}
 
 .navbar {
   width: 100%;
@@ -88,6 +91,7 @@
 
 .mission-detail-text{
   width: 32rem;
+  height: auto;
   position: absolute;
   top: 62vh;
   left:7vw;
@@ -174,7 +178,27 @@
     display: none;
   }
 }
-
+@media screen and (max-width : 550px) {
+  
+  .transporter-8{
+    background: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Trans8_OS_56_Launch_Streak_3593_Mobile_d871e25c34.jpg') no-repeat center;
+    background-size:100% 100%;
+  }
+  .CRS-28{
+    background: url('https://sxcontent9668.azureedge.us/cms-assets/assets/CRS_28_outsidehangar1h_IMG_3768_mobile_f723e43825.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .AX-2{
+    background: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Axiom_2_Splashdown_Crew_Website_000729053023_Mobile_2_9636bcf9f9.JPG') no-repeat center;
+    background-size: cover;
+  }
+  .starship-flight{
+    background: url('https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_MOBILE_3be065456e.jpg') no-repeat center;
+    background-size: cover;
+  }
+  
+}
+  
 @keyframes arrowAnimation {
   0%{
     bottom:7vh;
