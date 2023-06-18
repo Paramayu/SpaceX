@@ -1,78 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SpaceX</title>
-    <link rel="shortcut icon" href="Assets/logo.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar" id="navbar">
-      <div class="inner-nav">
-        <div class="logo">
-          <a href="/">
-            <img
-              src="Assets/Logo-name.png"
-              alt="SpaceX Logo"
-              class="logo-img"
-            />
-          </a>
-        </div>
-        <ul class="navbar-ul">
-          <li class="navbar-li">
-            <a class = "navbar-a" href="#">FALCON 9</a>
-          </li>
-          <li class="navbar-li">
-            <a class = "navbar-a" href="#">FALCON HEAVY</a>
-          </li>
-          <li class="navbar-li">
-            <a class = "navbar-a" href="#">DRAGON</a>
-          </li>
-          <li class="navbar-li">
-            <a class = "navbar-a" href="#">STARSHIP</a>
-          </li>
-          <li class="navbar-li">
-            <a class = "navbar-a" href="#">HUMAN PACEFLIGHT</a>
-          </li>
-          <li class="navbar-li">
-            <a class = "navbar-a" href="#">RIDESHARE</a>
-          </li>
-          <li class="navbar-li">
-            <a class = "navbar-a" href="#">STARSHILD</a>
-          </li>
-          <li class="navbar-li">
-            <a class = "navbar-a" href="#">STARLINK</a>
-          </li>
-        </ul>
-      </div>
-      <div class="side-nav">
-          <a href="#" class="navbar-a">SHOP</a>
-          <a href="#" class="navbar-a three-lines">&#9776&#9776</a>
-      </div>
-    </div>
-    <div class="transporter-8 mission">
-      <span class="title">RECENT LAUNCH</span>
-      <span class="name-mission">TRANSPORTER-8 MISSION</span>
-    </div>
-    <div class="CRS-28 mission">
-      <span class="title">RECENT LAUNCH</span>
-      <span class="name-mission">CRS-28 MISSION</span>
-    </div>
-    <div class="AX-2 mission">
-      <span class="title">COMPLETED MISSION</span>
-      <span class="name-mission">TRANSPORTER-8 MISSION</span>
-    </div>
-    <div class="starship-flight mission">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceX</title>
+  <link rel="shortcut icon" href="Assets/logo.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar" id="navbar">
+    <div class="logo">
+      <a href="/">
+        <img src="Assets/Logo-name.png" alt="SpaceX Logo" class="logo-img" />
+      </a>
     </div>
-  </body>
-  <script src="js/navbar.js"></script>
+    <ul class="navbar-ul">
+      <li class="navbar-li">
+        <a class="navbar-a" href="#">FALCON 9</a>
+      </li>
+      <li class="navbar-li">
+        <a class="navbar-a" href="#">FALCON HEAVY</a>
+      </li>
+      <li class="navbar-li">
+        <a class="navbar-a" href="#">DRAGON</a>
+      </li>
+      <li class="navbar-li">
+        <a class="navbar-a" href="#">STARSHIP</a>
+      </li>
+      <li class="navbar-li">
+        <a class="navbar-a" href="#">HUMAN PACEFLIGHT</a>
+      </li>
+      <li class="navbar-li">
+        <a class="navbar-a" href="#">RIDESHARE</a>
+      </li>
+      <li class="navbar-li">
+        <a class="navbar-a" href="#">STARSHILD</a>
+      </li>
+      <li class="navbar-li">
+        <a class="navbar-a" href="#">STARLINK</a>
+      </li>
+    </ul>
+    <div class="side-nav">
+      <a href="#" class="navbar-a navbar-li ">SHOP</a>
+      <a href="#" class="navbar-a three-lines">&#9776&#9776</a>
+    </div>
+  </div>
+  <div class="transporter-8 mission">
+      <div class="mission-detail-text">
+      <span class="title" >RECENT LAUNCH</span>
+      <span class="name-mission">TRANSPORTER-8 MISSION</span>
+      <button class="rewatch-btn" id="rewatch-btn">REWATCH</button>
+    </div>
+      <img src="Assets/arrow.png" alt="" class="arrow" id="arrow">
+  </div>
+  <div class="CRS-28 mission">
+    <div class="mission-detail-text">
+    <span class="title">RECENT LAUNCH</span>
+    <span class="name-mission">CRS-28 MISSION</span>
+    <button class="rewatch-btn" id="rewatch-btn">REWATCH</button>
+  </div>
+    <img src="Assets/arrow.png" alt="" class="arrow" id="arrow">
+  </div>
+  <div class="AX-2 mission">
+    <div class="mission-detail-text">
+    <span class="title">COMPLETED MISSION</span>
+    <span class="name-mission">AX-2 MISSION</span>
+    <button class="rewatch-btn" id="rewatch-btn">REWATCH</button>
+  </div>
+    <img src="Assets/arrow.png" alt="" class="arrow" id="arrow">
+  </div>
+  <div class="starship-flight mission">
+    <div class="mission-detail-text">
+    <span class="name-mission" style="width: auto;">STARSHIP FLIGHT TEST</span>
+    <button class="rewatch-btn" id="rewatch-btn">REWATCH</button>
+  </div>
+    <img src="Assets/arrow.png" alt="" class="arrow" id="arrow">
+  </div>
+  <div class="footer">
+    <span class="footer-span">
+      This webpage is a clone of the website <a href="http://spacex.com" class="performedBy">"spacex.com"</a> by <a href="https://github.com/Paramayu/SpaceX" class="performedBy" target="_blank">Paramayu</a> performed in 2023 for learning purpose. 
+    </span>
+  </div>
+</body>
+<script src="js/navbar.js"></script>
+
 </html>

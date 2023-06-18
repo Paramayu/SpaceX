@@ -3,44 +3,59 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .navbar {
+  width: 100%;
   position: fixed;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s , display 0.3s;;
   background-color: transparent;
-  padding: 2.1rem;
+  padding: 5vh 2.1vw;
   font-family: "kanit", sans-serif;
   font-size: 0.9rem;
-  font-weight: 100;
   letter-spacing: -0.5px;
   font-stretch: condensed;
   display: flex;
   align-items: center;
-  gap: 20rem;
+  justify-content: space-between;
+  z-index: 1;
 }
-.inner-nav {
 
-  display: flex;
-  align-items: center;
-}
 .logo {
-  margin: auto 3rem;
-
+  margin: auto 0 0 5vw;
 }
 .logo-img {
   width: 13rem;
 }
 .navbar-ul {
-  margin: auto 0;
   display: flex;
   gap: 1.3rem;
   list-style: none;
 }
 
+.navbar-li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height:1px;
+  bottom: 0;
+  left: 0;
+  transform-origin:bottom right;
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.2s ease-in-out;
+}
+.navbar-li:hover::after{
+  transform : scaleX(1);
+  transform-origin: bottom left;
+
+}
+.navbar-li{position: relative;}
 .navbar-a{
   text-decoration: none;
   color: white;
 }
 .side-nav{
+  justify-self:right;
   display: flex;
   gap:2rem;
 }
@@ -48,13 +63,13 @@
   letter-spacing: -6px;
 }
 .mission{
+  position: relative;
   width: 100%;
   height: 100vh;
-  background-size: cover;
 }
 .transporter-8{
   background: url('../Assets/Transporter-8-mission.jpg') no-repeat center;
-  background-size: cover;
+  background-size:cover;
 }
 .CRS-28{
   background: url('../Assets/CRS_28_mission.jpg') no-repeat center;
@@ -68,24 +83,114 @@
   background: url('../Assets/STARSHIP_missionjpg.jpg') no-repeat center;
   background-size: cover;
 }
+
+.transporter-8 .mission-detail-text{ top: 52vh; }
+
+.mission-detail-text{
+  width: 32rem;
+  position: absolute;
+  top: 62vh;
+  left:7vw;
+}
 .title{
+  display: block;
   position: relative;
   font-family: "Roboto Condensed", sans-serif;
-  top: 12rem;
-  left: 8rem;
   font-weight: bold;
   font-size: 1.3rem;
   color: white;
+  
 }
 .name-mission{
-  display: inline-block;
-  width: 28rem;
+  display: block;
   position: relative;
   font-family: "kanit", sans-serif;
-  top: 20rem;
-  left: -1rem;
   font-weight: bold;
   font-size: 3rem;
   color: white;
 }
+
+.rewatch-btn{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  position:relative;
+  top:1vh;
+  width: 10rem;
+  height: 3.3rem;
+  transition: background 0.5s, color 0.5s;
+}
+.rewatch-btn:hover{
+  background: white;
+  color: black;
+}
+.arrow{
+  position: absolute;
+  width: 1.5vw;
+  bottom: 7vh;
+  margin-left: 49vw;
+  animation: arrowAnimation 2.5s infinite;
+}
+.footer{
+  display: flex;
+  height: 10vh;
+  background: black;
+  color: white;
+  font-family: "kanit", sans-serif;
+  font-size: 1rem;
+  word-spacing: 2px;
+  align-items: center;
+  justify-content: center;
+}
+.performedBy{
+  text-decoration: none;
+  color: aqua;
+}
+
+@media only screen and (max-width: 1250px) {
+  html{
+    font-size: 0.75rem;
+  }
+  .navbar-ul{
+    display: none;
+  }
+  .navbar{
+    display: grid;
+  }
+  .logo{
+    position:absolute;
+    justify-self: center;
+  }
+
+  .side-nav{
+    right: 3vw;
+    position: absolute;
+    justify-self: right;
+  }
+  .shop{
+    display: none;
+  }
+}
+
+@keyframes arrowAnimation {
+  0%{
+    bottom:7vh;
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  80%{
+    bottom:5vh;
+    opacity: 0;
+  }
+  100%{
+    bottom: 7vh;
+    opacity: 0;
+  }
+}
+
 
