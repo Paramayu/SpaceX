@@ -1,2 +1,3 @@
 # SpaceX
 Space X clone created by yours truly...
+This spaceX clone was made just for learning purposes and does'nt have any harmful intent

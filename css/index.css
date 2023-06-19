@@ -3,14 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
   overflow-x: hidden;
 }
 
 .navbar {
   width: 100%;
   position: fixed;
-  transition: opacity 0.3s , display 0.3s;;
+  transition: opacity 0.3s, display 0.3s;
+  ;
   background-color: transparent;
   padding: 5vh 2.1vw;
   font-family: "kanit", sans-serif;
@@ -26,86 +29,110 @@ html,body{
 .logo {
   margin: auto 0 0 5vw;
 }
+
 .logo-img {
   width: 13rem;
 }
+
 .navbar-ul {
   display: flex;
   gap: 1.3rem;
   list-style: none;
 }
 
-.navbar-li::after{
+.navbar-li::after {
   content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height:1px;
+  height: 1px;
   bottom: 0;
   left: 0;
-  transform-origin:bottom right;
+  transform-origin: bottom right;
   background-color: rgb(255, 255, 255);
   transition: transform 0.2s ease-in-out;
 }
-.navbar-li:hover::after{
-  transform : scaleX(1);
+
+.navbar-li:hover::after {
+  transform: scaleX(1);
   transform-origin: bottom left;
 
 }
-.navbar-li{position: relative;}
-.navbar-a{
+
+.navbar-li {
+  position: relative;
+}
+
+.navbar-a {
   text-decoration: none;
   color: white;
 }
-.side-nav{
-  justify-self:right;
+
+.side-nav {
+  justify-self: right;
   display: flex;
-  gap:2rem;
+  gap: 2rem;
 }
-.three-lines{
+
+.three-lines {
   letter-spacing: -6px;
 }
-.mission{
+
+.mission {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-.transporter-8{
-  background: url('../Assets/Transporter-8-mission.jpg') no-repeat center;
-  background-size:cover;
-}
-.CRS-28{
-  background: url('../Assets/CRS_28_mission.jpg') no-repeat center;
+
+.PSN-Satria {
+  background: url('../Assets/PSN-Satria_mission.jpg') no-repeat center;
   background-size: cover;
 }
-.AX-2{
+
+.transporter-8 {
+  background: url('../Assets/Transporter-8_mission.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.CRS-28 {
+  background: url('../Assets/CRS-28_mission.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.AX-2 {
   background: url('../Assets/Axiom-2_mission.jpg') no-repeat center;
   background-size: cover;
 }
-.starship-flight{
-  background: url('../Assets/STARSHIP_missionjpg.jpg') no-repeat center;
+
+.starship-flight {
+  background: url('../Assets/Starship-test_mission.jpg') no-repeat center;
   background-size: cover;
 }
 
-.transporter-8 .mission-detail-text{ top: 52vh; }
+.transporter-8 .mission-detail-text {
+  top: 52vh;
+}
 
-.mission-detail-text{
+.mission-detail-text {
+  display:block;
   width: 32rem;
   height: auto;
   position: absolute;
   top: 62vh;
-  left:7vw;
+  left: 7vw;
 }
-.title{
+
+.title {
   display: block;
   position: relative;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
   color: white;
-  
+
 }
-.name-mission{
+
+.name-mission {
   display: block;
   position: relative;
   font-family: "kanit", sans-serif;
@@ -114,31 +141,34 @@ html,body{
   color: white;
 }
 
-.rewatch-btn{
+.rewatch-btn {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   background: transparent;
   border: 2px solid white;
   color: white;
   cursor: pointer;
-  position:relative;
-  top:1vh;
+  position: relative;
+  top: 1vh;
   width: 10rem;
   height: 3.3rem;
   transition: background 0.5s, color 0.5s;
 }
-.rewatch-btn:hover{
+
+.rewatch-btn:hover {
   background: white;
   color: black;
 }
-.arrow{
+
+.arrow {
   position: absolute;
   width: 1.5vw;
   bottom: 7vh;
   margin-left: 49vw;
   animation: arrowAnimation 2.5s infinite;
 }
-.footer{
+
+.footer {
   display: flex;
   height: 10vh;
   background: black;
@@ -149,72 +179,96 @@ html,body{
   align-items: center;
   justify-content: center;
 }
-.performedBy{
+.footer-span{
+ padding: 10px; 
+}
+
+.performedBy {
   text-decoration: none;
   color: aqua;
 }
 
 @media only screen and (max-width: 1250px) {
-  html{
+  html {
     font-size: 0.75rem;
   }
-  .navbar-ul{
+
+  .navbar-ul {
     display: none;
   }
-  .navbar{
+
+  .navbar {
     display: grid;
   }
-  .logo{
-    position:absolute;
+
+  .logo {
+    position: absolute;
     justify-self: center;
   }
 
-  .side-nav{
+  .side-nav {
     right: 3vw;
     position: absolute;
     justify-self: right;
   }
-  .shop{
+
+  .shop {
     display: none;
   }
 }
+
 @media screen and (max-width : 550px) {
-  
-  .transporter-8{
-    background: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Trans8_OS_56_Launch_Streak_3593_Mobile_d871e25c34.jpg') no-repeat center;
-    background-size:100% 100%;
+  html {
+    font-size: 0.5rem;
   }
-  .CRS-28{
-    background: url('https://sxcontent9668.azureedge.us/cms-assets/assets/CRS_28_outsidehangar1h_IMG_3768_mobile_f723e43825.jpg') no-repeat center;
+
+  .PSN-Satria {
+    background: url('../Assets/PSN-Satria_mission_mob.jpg') no-repeat center;
     background-size: cover;
   }
-  .AX-2{
-    background: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Axiom_2_Splashdown_Crew_Website_000729053023_Mobile_2_9636bcf9f9.JPG') no-repeat center;
+
+  .transporter-8 {
+    background: url('../Assets/Transporter-8_mission_mob.jpg') no-repeat center;
     background-size: cover;
   }
-  .starship-flight{
-    background: url('https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_MOBILE_3be065456e.jpg') no-repeat center;
+
+  .CRS-28 {
+    background: url('../Assets/CRS-28_mission_mob.jpg') no-repeat center;
     background-size: cover;
   }
-  
+
+  .AX-2 {
+    background: url('../Assets/Axiom-2_mission_mob.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .starship-flight {
+    background: url('../Assets/Starship-test_mission_mob.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .footer{
+    font-size: 1.5rem;
+  }
+
 }
-  
+
 @keyframes arrowAnimation {
-  0%{
-    bottom:7vh;
+  0% {
+    bottom: 7vh;
     opacity: 0;
   }
-  20%{
+
+  20% {
     opacity: 1;
   }
-  80%{
-    bottom:5vh;
+
+  80% {
+    bottom: 5vh;
     opacity: 0;
   }
-  100%{
+
+  100% {
     bottom: 7vh;
     opacity: 0;
   }
 }
-
-
